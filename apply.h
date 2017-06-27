@@ -79,6 +79,7 @@ struct apply_state {
 
 	/* Various "current state" */
 	int linenr; /* current line number */
+	int extension_linenr; /* first line specifying delete/new/rename/copy */
 	struct string_list symlink_changes; /* we have to track symlinks */
 
 	/*
